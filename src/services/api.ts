@@ -1,7 +1,10 @@
 import axios from 'axios';
+import getConfig from 'next/config';
+
+const { publicRuntimeConfig } = getConfig();
 
 const api = axios.create({
-  baseURL: 'http://localhost:3001',
+  baseURL: publicRuntimeConfig.NEXT_PUBLIC_AGENDAPLUS_URL,
 });
 
 export default api;
