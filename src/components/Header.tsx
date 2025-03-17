@@ -7,12 +7,12 @@ const Header = () => {
       <nav className="container mx-auto">
         <ul className="flex space-x-4">
           <li>
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <a className="hover:underline">Home</a>
             </Link>
           </li>
           <li>
-            <Link href="/clients">
+            <Link href="/clients" legacyBehavior>
               <a className="hover:underline">Clientes</a>
             </Link>
           </li>
